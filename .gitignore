@@ -1,0 +1,32 @@
+# Compiled class files
+*.class
+
+# Java compiled output
+srms/bin/
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Log files
+*.log
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Replit
+.replit
+.config/
+.cache/
+.local/
