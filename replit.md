@@ -50,7 +50,11 @@ javac -d bin src/studentRecordManagementSystem/*.java src/module-info.java
 ```
 
 ## Recent Changes
-- **2025-11-22**: Bug fixes
+- **2025-11-22**: Bug fixes (Round 2)
+  - Fixed infinite loop when entering invalid input in delete confirmation
+  - Added proper input re-prompt loop for invalid Y/N responses
+  
+- **2025-11-22**: Bug fixes (Round 1)
   - Fixed infinite loop in DeleteStudent.java (missing break statement after deletion)
   - Fixed syntax error in StudentRecords.java (extra period on line 7)
   - Recompiled and tested all fixes successfully

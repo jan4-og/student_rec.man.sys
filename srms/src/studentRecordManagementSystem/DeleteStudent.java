@@ -32,7 +32,9 @@ public class DeleteStudent {
                     System.out.println("[✕] Deletion cancelled.");
                     break;
                 } else {
-                        System.out.println("[✕] Invalid input.");
+                        System.out.println("[✕] Invalid input. Please enter Y or N.");
+                        System.out.print("Delete " + s.buildFullName() + " (Y/N)? ");
+                        ans = sc.nextLine().trim().toUpperCase();
                 }
         }
         
