@@ -1,4 +1,3 @@
-JAGG00|Joyce|Anne|Guevarra|Guevarra|Female|19|ACT|Freshman
 O0AF00|Obet||Alamodin|Fernando|Male|19|ACT|Freshman
 RVSL00|Rass|Viell|Serrano|Laxamana|Female|18|ACT|Freshman
 NZCL00|Naomi|Zai|Canlas|Lazaro|Female|18|ACT|Freshman
@@ -7,3 +6,5 @@ JLEM00|Jake|Lorence|Esguerra|Meneses|Male|19|ACT|Freshman
 J0GN00|Janelyn||Gabertan|Nollora|Female|20|ACT|Freshman
 CRBS00|Cyril|Rajj|Bungay|Silvestre|Male|20|ACT|Freshman
 S00T00|Steven|||Tolentino|Male|18|ACT|Freshman
+MT0G00|Mary|Therese||Guevarra|Female|18|BSIS|Freshman
+JAJG00|Joyce|Anne|Jinao|Guevarra|Female|19|ACT|Freshman

@@ -1,7 +1,7 @@
 package studentRecordManagementSystem;
 
 public class Student {
-	//These are all the data fields for one student.
+
     private String idNumber;
     private String firstName;
     private String secondName;
@@ -12,9 +12,6 @@ public class Student {
     private String course;
     private String yearLevel;
 
-    // CONSTRUCTOR
-    // It initializes the initial values of the fields.
-    // If second name and middle name is absent, it defaults to an empty string: ""
     public Student(String idNumber, String firstName, String secondName,
                    String middleName, String surname, String sex,
                    int age, String course, String yearLevel) {
@@ -29,7 +26,6 @@ public class Student {
         this.yearLevel = yearLevel;
     }
 
-    // GETTERS
     public String getIDNumber() {
     	return idNumber;
     }
@@ -65,7 +61,6 @@ public class Student {
     	return yearLevel;
     }
 
-    // SETTERS
     public void setIDNumber(String id) {
     	this.idNumber = id;
     }
@@ -102,19 +97,14 @@ public class Student {
     	this.yearLevel = y;
     }
 
-    // This concatenates the name parts to this format: Surname, First Name [[Second Name], Middle Name]
     public String buildFullName() {
         StringBuilder sb = new StringBuilder();
-        sb.append(surname).append(", ").append(firstName); //Surname, First Name
-        
-        //If 2nd name is not empty: Surname, First Name Second Name
+        sb.append(surname).append(", ").append(firstName);
+
         if (!secondName.isEmpty()) {
         	sb.append(" ").append(secondName);
         }
         
-        // If middle name is not empty:
-        // Surname, First Name Second Name, Middle Name
-        // or Surname, First Name, Middle Name
         if (!middleName.isEmpty()) {
         	sb.append(", ").append(middleName);
         }
@@ -122,20 +112,14 @@ public class Student {
         return sb.toString().trim();
     }
 
-    // It displays the student information in this format:
-    // ID Number: | Name: | Sex: | Age: | Course: | Year Level: 
     public String displayStudentInfo() {
         return "ID Number: " + idNumber + " | Name: " + buildFullName() + " | Sex: " + sex + " | Age: " + age + " | Course: " + course + " | Year Level: " + yearLevel;
     }
 
-    // It formats the information to a string (pipe-separated)
-    // This is for file handling
     public String toSaveInfo() {
         return idNumber + "|" + firstName + "|" + secondName + "|" + middleName + "|" + surname + "|" + sex + "|" + age + "|" + course + "|" + yearLevel;
     }
 
-    // It allows the next class to load data from the created file into the objects
-    // This is also for file handling
     public static Student fromSavedInfo(String line) {
         String[] p = line.split("\\|", -1);
         

@@ -15,7 +15,7 @@ public class UpdateStudent {
         Student s = records.searchByID(id);
         
         if (s == null) {
-            System.out.println("Student not found.");
+            System.out.println("[✕] Student not found.");
             sc.nextLine();
             return;
         }
@@ -79,10 +79,10 @@ public class UpdateStudent {
                     s.setAge(age);
                     ageUpdated = true;
                 } else {
-                    System.out.println("[❌] Age must be realistic.");
+                    System.out.println("[✕] Age must be realistic.");
                 }
             } catch (NumberFormatException e) {
-                System.out.println("[❌] Invalid input format.");
+                System.out.println("[✕] Invalid input format.");
             }
         }
 
@@ -102,7 +102,6 @@ public class UpdateStudent {
             yr = sc.nextLine().trim();
 
             if (yr.isEmpty()) {
-                System.out.println("Year Level kept: " + s.getYearLevel());
                 break;
             }
 
@@ -112,7 +111,7 @@ public class UpdateStudent {
                 s.setYearLevel(norm);
                 yearUpdated = true;
             } else {
-                System.out.println("[❌] Invalid input.");
+                System.out.println("[✕] Invalid input.");
             }
         }
 
@@ -121,7 +120,7 @@ public class UpdateStudent {
         if (nameChanged) {
             String newId = records.generateID(s.getFirstName(), s.getSecondName(), s.getMiddleName(), s.getSurname());
             records.updateStudentID(id, s, newId);
-            System.out.println("[❗] Name changed — ID regenerated: " + newId);
+            System.out.println("[] Name changed — ID regenerated: " + newId);
         } else {
             records.addStudent(s);
         }

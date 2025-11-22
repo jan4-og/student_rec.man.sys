@@ -34,7 +34,7 @@ public class SearchStudent {
             } catch (Exception ignored) {
             }
             
-            System.out.println("[❌] Invalid choice.");
+            System.out.println("[✕] Invalid choice.");
         }
 
         List<Student> results = new ArrayList<>();
@@ -81,7 +81,7 @@ public class SearchStudent {
                         	results.add(s);
                         }
                     }
-                } catch (Exception e) { System.out.println("[❌] Invalid number."); }
+                } catch (Exception e) { System.out.println("[✕] Invalid number."); }
             }
             
             case 5 -> {
@@ -116,7 +116,7 @@ public class SearchStudent {
         	System.out.println("    STUDENT RECORD MANAGEMENT SYSTEM    ");
         	System.out.println("                 SEARCH                 ");
         	System.out.println("⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊");
-        	System.out.println("\n[❌] No matching records.");
+        	System.out.println("\n[✕] No matching records.");
         } else {
         	System.out.println("\n⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊");
         	System.out.println("    STUDENT RECORD MANAGEMENT SYSTEM    ");
@@ -151,7 +151,7 @@ public class SearchStudent {
             System.out.println("_".repeat(Math.max(totalLen, 40)));
         }
 
-        System.out.print("\nPress [Enter] to return to Main Menu...");
+        System.out.print("\nPress [Enter] to return to the Main Menu...");
         sc.nextLine();
     }
 }

@@ -26,7 +26,7 @@ public class AddStudent {
             	break;
             }
             
-            System.out.println("[❌] Please enter Male or Female.");
+            System.out.println("[✕] Please enter Male or Female.");
         }
 
         int age;
@@ -37,13 +37,13 @@ public class AddStudent {
                 age = Integer.parseInt(in);
                 
                 if (age < 1 || age > 150) {
-                    System.out.println("[❌] Invalid input!");
-                    System.out.println("[❓] Inputted age is not considered realistic for human records.");
+                    System.out.println("[✕] Invalid input!");
+                    System.out.println("[?] Inputted age is not considered realistic for human records.");
                     continue;
                 }
                 break;
             } catch (NumberFormatException e) {
-                System.out.println("[❌] Invalid number. Please enter digits only.");
+                System.out.println("[✕] Invalid number. Please enter digits only.");
             }
         }
 
@@ -53,7 +53,7 @@ public class AddStudent {
             rawCourse = sc.nextLine().trim();
             
             if (rawCourse.isEmpty()) {
-            	System.out.println("Course cannot be empty.");
+            	System.out.println("[✕] Course cannot be empty.");
             }
         } while (rawCourse.isEmpty());
         
@@ -69,16 +69,16 @@ public class AddStudent {
             	break;
             }
             
-            System.out.println("[❌] Invalid year level.");
+            System.out.println("[✕] Invalid year level.");
         }
 
         String id = records.generateID(first, second, middle, surname);
         Student s = new Student(id, first, second, middle, surname, sex, age, courseCode, yearLevel);
         records.addStudent(s);
 
-        System.out.println("\nStudent added successfully! ₍ᵔ•ᴗ•ᵔ₎");
+        System.out.println("\n[✓] Student added successfully! ₍ᵔ•ᴗ•ᵔ₎");
         System.out.println("Generated ID: " + id);
-        System.out.print("\nPress [Enter] to return to Main Menu...");
+        System.out.print("\nPress [Enter] to return to the Main Menu...");
         sc.nextLine();
     }
 
@@ -91,7 +91,7 @@ public class AddStudent {
             	return input;
             }
             
-            System.out.println("[❌] This field cannot be empty.");
+            System.out.println("[✕] This field cannot be empty.");
         }
     }
 

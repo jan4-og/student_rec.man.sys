@@ -50,6 +50,11 @@ javac -d bin src/studentRecordManagementSystem/*.java src/module-info.java
 ```
 
 ## Recent Changes
+- **2025-11-22**: Bug fixes
+  - Fixed infinite loop in DeleteStudent.java (missing break statement after deletion)
+  - Fixed syntax error in StudentRecords.java (extra period on line 7)
+  - Recompiled and tested all fixes successfully
+
 - **2025-11-22**: Initial import from GitHub
   - Installed Java GraalVM 22.3 (Java 19)
   - Configured workflow for console application
