@@ -1,5 +1,4 @@
 O0AF00|Obet||Alamodin|Fernando|Male|19|ACT|Freshman
-RVSL00|Rass|Viell|Serrano|Laxamana|Female|18|ACT|Freshman
 NZCL00|Naomi|Zai|Canlas|Lazaro|Female|18|ACT|Freshman
 ZRRM00|Zepaneia|Ruth|Real|Maraña|Female|18|ACT|Freshman
 JLEM00|Jake|Lorence|Esguerra|Meneses|Male|19|ACT|Freshman
