@@ -10,13 +10,13 @@ public class Utils {
     	if (input == null) {
         	return "";
         }
-        
+
         input = input.trim().toLowerCase();
-        
+
         if (input.isEmpty()) {
         	return "";
         }
-        
+
         String[] parts = input.split("\\s+");
         StringBuilder str = new StringBuilder();
         
@@ -25,7 +25,7 @@ public class Utils {
             if (p.length() == 0) {
             	continue;
             }
-            
+
             str.append(Character.toUpperCase(p.charAt(0)));
             
             if (p.length() > 1) {
@@ -71,12 +71,12 @@ public class Utils {
         if (parts.length == 1 && parts[0].length() <= 6 && parts[0].equals(parts[0].toUpperCase())) {
             return parts[0];
         }
-        
+        "Associate", "In", "Computer", "Technology"
         StringBuilder sb = new StringBuilder();
         
         for (String p : parts) {
             String low = p.toLowerCase();
-            
+
             if (STOPWORDS.contains(low)) {
             	continue;
             }
@@ -153,4 +153,3 @@ public class Utils {
         return "";
     }
 }
-
