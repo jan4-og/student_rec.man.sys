@@ -113,7 +113,11 @@ public class Student {
     }
 
     public String displayStudentInfo() {
-        return "ID Number: " + idNumber + " | Name: " + buildFullName() + " | Sex: " + sex + " | Age: " + age + " | Course: " + course + " | Year Level: " + yearLevel;
+        return "ID Number: " + idNumber +
+        	   " | Name: " + buildFullName() +
+        	   " | Sex: " + sex + " | Age: " + age +
+        	   " | Course: " + course +
+        	   " | Year Level: " + yearLevel;
     }
 
     public String toSaveInfo() {

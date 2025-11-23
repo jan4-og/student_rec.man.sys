@@ -12,12 +12,12 @@ public class SearchStudent {
         System.out.println("    STUDENT RECORD MANAGEMENT SYSTEM    ");
         System.out.println("                 SEARCH                 ");
         System.out.println("⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊");
-        System.out.println("[1] Search by ID");
-        System.out.println("[2] Search by Name");
-        System.out.println("[3] Search by Sex");
-        System.out.println("[4] Search by Age");
-        System.out.println("[5] Search by Course");
-        System.out.println("[6] Search by Year Level");
+        System.out.println("[1] ⌕ Search by ID");
+        System.out.println("[2] ⌕ Search by Name");
+        System.out.println("[3] ⌕ Search by Sex");
+        System.out.println("[4] ⌕ Search by Age");
+        System.out.println("[5] ⌕ Search by Course");
+        System.out.println("[6] ⌕ Search by Year Level");
 
         int choice;
         while (true) {

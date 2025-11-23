@@ -119,21 +119,25 @@ public class Utils {
             case "freshman":
             case "1st":
             case "1st year":
+            case "first year":
             	return "Freshman";
             case "2":
             case "sophomore":
             case "2nd":
             case "2nd year":
+            case "second year":
             	return "Sophomore";
             case "3":
             case "junior":
             case "3rd":
             case "3rd year":
+            case "third year":
             	return "Junior";
             case "4":
             case "senior":
             case "4th":
             case "4th year":
+            case "fourth year":
             	return "Senior";
             default:
                 try {
