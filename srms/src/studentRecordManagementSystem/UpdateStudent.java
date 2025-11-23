@@ -121,7 +121,7 @@ public class UpdateStudent {
         if (nameChanged) {
             String newId = records.generateID(s.getFirstName(), s.getSecondName(), s.getMiddleName(), s.getSurname());
             records.updateStudentID(id, s, newId);
-            System.out.println("[] Name changed — ID regenerated: " + newId);
+            System.out.println("[!] Name changed — ID regenerated: " + newId);
         } else {
             records.addStudent(s);
         }
