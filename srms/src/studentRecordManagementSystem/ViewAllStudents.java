@@ -27,7 +27,7 @@ public class ViewAllStudents {
 
         System.out.println("\n⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊");
         System.out.println("    STUDENT RECORD MANAGEMENT SYSTEM    ");
-        System.out.println("            VIEW ALL STUDENT            ");
+        System.out.println("            VIEW ALL STUDENTS           ");
         System.out.println("⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊\n");
 
         int totalLen = 0;
@@ -47,3 +47,4 @@ public class ViewAllStudents {
         sc.nextLine();
     }
 }
+
