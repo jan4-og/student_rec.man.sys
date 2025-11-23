@@ -16,6 +16,7 @@ public class DeleteStudent {
         
         if (s == null) {
             System.out.println("[✕] Student not found.");
+            System.out.print("\nPress [Enter] to return to the Main Menu...");
             sc.nextLine();
             return;
         }
