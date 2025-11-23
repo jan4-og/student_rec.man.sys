@@ -6,9 +6,6 @@ import java.util.Set;
 
 public class Utils {
 
-	// Inputs turns to title cased words.
-	// Example: associate in computer technology.
-	// To: Associate In Computer Technology
     public static String casing(String input) {
     	if (input == null) {
         	return "";
@@ -42,14 +39,7 @@ public class Utils {
         
         return str.toString();
     }
-    
-    //This adds whitespaces to the right for alignment.
-    //EXAMPLE: 
-    // Name: Juan Dela Cruz | Age: 19
-    // Name: John Doe | Age: 30
-    //TO:
-    // Name: Juan Dela Cruz | Age: 19
-    // Name: John Doe       | Age: 30
+
     public static String padding(String s, int width) {
     	if (s == null) {
         	s = "";
@@ -61,15 +51,9 @@ public class Utils {
         
         return s + " ".repeat(width - s.length());
     }
-    
-    // This is a Set named STOPWORDS.
-    // It takes common words like "in" (Associate In Computer Technology)
-    // It excludes the words in the set when creating course codes.
+
     private static final Set<String> STOPWORDS = new HashSet<>(Arrays.asList("in", "of", "and", "for", "the", "to", "with", "on", "by", "a"));
-    
-    // It generates the acronym of the inputted course if the user gives the full course name.
-    // It checks if words are in the STOPWORDS set and ignores the word found in it.
-    // Associate in Computer Technology to: ACT (in is ignored so it won't return AICT.
+
     public static String toCourseCode(String input) {
         if (input == null) {
         	return "";
@@ -119,8 +103,6 @@ public class Utils {
         return code.toUpperCase();
     }
 
-    // It converts various inputs that corresponds to a certain return value.
-    // Every input is considered as either: Freshman, Sophomore, Junior, Senior
     public static String normalizeYearLevel(String input) {
         if (input == null) {
         	return "";

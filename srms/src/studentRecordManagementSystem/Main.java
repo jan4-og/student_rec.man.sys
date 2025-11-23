@@ -20,9 +20,9 @@ public class Main {
             System.out.println("⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊");
             System.out.println("[1] Add a Student ⎘");
             System.out.println("[2] View All Students ⧉");
-            System.out.println("[3] Search Student ⌕");
-            System.out.println("[4] Update Student ✎");
-            System.out.println("[5] Delete Student ⌦");
+            System.out.println("[3] Search for a Student ⌕");
+            System.out.println("[4] Update a Student's Data ✎");
+            System.out.println("[5] Delete a Student ⌦");
             System.out.println("[6] Exit ⍈");
             System.out.print("Enter your choice: ");
 

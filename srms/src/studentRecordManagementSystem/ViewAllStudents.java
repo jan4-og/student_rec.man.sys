@@ -5,11 +5,11 @@ import java.util.Scanner;
 
 public class ViewAllStudents {
 
-	public void execute(StudentRecords records, Scanner sc) { // Accepts the main Scanner
+	public void execute(StudentRecords records, Scanner sc) {
         List<Student> list = records.sortBySurname();
         
         if (list.isEmpty()) {
-            System.out.println("\n[❌] No students found.");
+            System.out.println("\n[✕] No students found.");
             System.out.print("\nPress Enter to return...");
             sc.nextLine();
             return;
@@ -43,7 +43,7 @@ public class ViewAllStudents {
         }
 
         System.out.println("_".repeat(Math.max(totalLen, 40)));
-        System.out.print("\nPress [Enter] to return...");
+        System.out.print("\nPress [Enter] to return to the Main Menu...");
         sc.nextLine();
     }
 }
