@@ -43,7 +43,7 @@ public class AddStudent {
                 }
                 break;
             } catch (NumberFormatException e) {
-                System.out.println("[✕] Invalid number. Please enter digits only.");
+                System.out.println("[✕] Invalid input. Please enter digits only.");
             }
         }
 
@@ -101,3 +101,4 @@ public class AddStudent {
         return input == null ? "" : input;
     }
 }
+
