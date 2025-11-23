@@ -2,7 +2,7 @@ package studentRecordManagementSystem;
 
 import java.io.*;
 import java.util.*;
-// Manager
+
 public class StudentRecords {
     private LinkedHashMap<String, Student> students = new LinkedHashMap<>();
     private final String FILE = "students.txt";
